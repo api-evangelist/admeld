@@ -1,8 +1,24 @@
 aid: admeld
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/admeld.png
 name: AdMeld
-description: 'AdMeld is a company surfaced as a portfolio company of foundry-group, norwest-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: adtech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'AdMeld was a New York City advertising-technology company founded in 2007 (by Ben
+  Barokas and Brian Adams) that ran a supply-side platform / private ad exchange helping premium
+  digital publishers optimize and monetize their ad inventory (serving 500+ publishers including
+  FOX News and The Weather Channel). Google acquired AdMeld in 2011 for roughly $400M and folded
+  its technology into the DoubleClick Ad Exchange. AdMeld no longer operates as an independent
+  product and exposes no standalone public API; the admeld.com domain now serves a Google-maintained
+  legacy landing page for DoubleClick Ad Exchange (Google nameservers, Google-hosted).'
 url: https://raw.githubusercontent.com/api-evangelist/admeld/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +27,22 @@ x-backed-by:
 - norwest-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-lifecycle: acquired
+x-acquired-by: google
+x-acquired-year: 2011
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Adtech
+- Advertising
+- Supply-Side Platform
+- Programmatic Advertising
+- Ad Exchange
+- Publishers
+- Acquired
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +52,11 @@ maintainers:
 common:
 - type: Website
   url: https://www.admeld.com
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  note: Defunct company; acquired by Google 2011 and folded into DoubleClick Ad Exchange. No
+    independent API surface, developer portal, OpenAPI, SDKs, or MCP. admeld.com is Google-owned
+    static legacy page. Verified via web search + live domain/DNS probe.
